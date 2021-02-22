@@ -23,7 +23,7 @@
   <!-- Daterange picker -->
   <link rel="stylesheet" href="/admin/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
-  <link rel="stylesheet" href="/admin/plugins/summernote/summernote-bs4.css">
+  <link href="/admin/dist/css/colorbox.css" rel="stylesheet">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -180,6 +180,9 @@
 <script src="/admin/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/admin/dist/js/demo.js"></script>
-<script src="/public/js/admin.js"></script>
+<script src="https://cdn.tiny.cloud/1/sv781i1w21q3cpbqyqffjimna70ykbj0yc97imhahf4w2e5i/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="/js/admin.js"></script>
+<script type="text/javascript" src="/admin/dist/js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="/packages/barryvdh/elfinder/js/standalonepopup.js"></script>
 </body>
 </html>
