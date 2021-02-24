@@ -54,7 +54,7 @@
 
                                 <div class="form-group">
                                     <label for="feature_image">Изображение статьи</label>
-                                    <img src="" alt="" class="img-uploaded" style="display: block; width: 300px">
+                                    <img src="" alt="" class="img-uploaded" style="display: block; width: 100px">
                                     <input type="text" name="img" class="form-control" id="feature_image"
                                         name="feature_image" value="" readonly>
                                     <a href="" class="popup_selector" data-inputid="feature_image">Выбрать изображение</a>
