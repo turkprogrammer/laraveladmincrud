@@ -29,7 +29,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.users.create');
     }
 
     /**
@@ -62,7 +62,10 @@ class UsersController extends Controller
      */
     public function edit(User $user)
     {
-        //
+        return view('admin.users.edit', [
+
+            'user' =>$user
+        ]);
     }
 
     /**
@@ -74,7 +77,10 @@ class UsersController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+        $user->name = $request->name;
+        $user->email =  $request->email;
+        $user->save();
+        return redirect()->back()->withSuccess('User updated!');
     }
 
     /**
@@ -85,6 +91,7 @@ class UsersController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        $user->delete();
+        return redirect()->back()->withSuccess('User deleted!');
     }
 }

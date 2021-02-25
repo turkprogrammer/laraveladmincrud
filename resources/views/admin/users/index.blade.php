@@ -55,10 +55,10 @@
                                         {{ $user['id'] }}
                                     </td>
                                     <td>
-                                        {{ $user['name'] }}
+                                        <h4><span class="badge bg-secondary">{{ $user['name'] }}</span></h4>
                                     </td>
                                     <td>
-
+                                        <span class="badge bg-danger">{{ $user->getRoleNames() }}</span>
                                     </td>
                                     <td>
                                         {{ $user['email'] }}
